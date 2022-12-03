@@ -40,7 +40,7 @@ As a user, AAU, I want the ability to...
 ## Wireframes/Screenshots
 
 ![Index](public/images/index.png)
-![Aignup](public/images/signup.png)
+![Signup](public/images/signup.png)
 ![Compatibility Signs](public/images/compatibilitysigns.png)
 
 
@@ -48,7 +48,7 @@ As a user, AAU, I want the ability to...
 
 - Index/public page displays information about what features that signing up would provide
 - Log in to access more features
-- Logged in users can
+- Logged in users can...
 
 
 ## Trello Board
@@ -58,8 +58,6 @@ As a user, AAU, I want the ability to...
 
 ## Planned future enhancements
 
-- Implement function to include dates of pick-up, calculate due date according to day supply and refill tracker
-- Add cards to allow user to keep track of physician info
 
 
 ## Credits

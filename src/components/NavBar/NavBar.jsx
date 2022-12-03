@@ -23,7 +23,7 @@ export default function NavBar({ user, setUser }) {
             <Nav.Link href="/">Welcome, {user.name}!</Nav.Link>
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/dailyhoroscope">Daily Horoscope</Nav.Link>
-            <Nav.Link href="/orders/new">Compatibility</Nav.Link>
+            <Nav.Link href="/compatibility">Compatibility</Nav.Link>
           </Nav>
 
           <Nav>
