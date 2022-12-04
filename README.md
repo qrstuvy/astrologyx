@@ -46,9 +46,8 @@ As a user, AAU, I want the ability to...
 
 ## INSTRUCTIONS
 
-- Index/public page displays information about what features that signing up would provide
-- Log in to access more features
-- Logged in users can...
+- Sign-up and log-in to access more features
+- Logged in users can view daily horoscopes for different signs
 
 
 ## Trello Board

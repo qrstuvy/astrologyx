@@ -1,0 +1,45 @@
+.set {
+    font-size: 1em;
+    padding: 6px 20px;
+    border-radius: 15px;
+    background-color: rgba(23, 40, 80, 0.671);
+    border: 1px solid rgb(45, 76, 138);
+    margin: 10px;
+    color: white;
+  }
+
+  .set:hover {
+    box-shadow: 0 8px 5px -5px rgb(74, 113, 192);
+    transform: translateY(-3px);
+    transition: 0.1s;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap:1rem;
+    margin: 0 auto;
+  }
+  
+  .zodiac-img {
+    background-size: cover;
+    background-position: center;
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+  }
+  
+
+  
+.transformBig{
+    transition-duration: 3s;
+    transform:scale(1.6);
+  }
+  
+  .transformSmall{
+    transition-duration: 3s;
+    transform:scale(0.8);
+    opacity: 0.5;
+  }

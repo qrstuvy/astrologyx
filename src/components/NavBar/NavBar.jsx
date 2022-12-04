@@ -22,9 +22,11 @@ export default function NavBar({ user, setUser }) {
           <Nav className="me-auto">
             <Nav.Link href="/">Welcome, {user.name}!</Nav.Link>
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/dailyhoroscope">Daily Horoscope</Nav.Link>
-            <Nav.Link href="/compatibility">Compatibility</Nav.Link>
+            <Nav.Link href="/daily_horoscope">Daily Horoscope</Nav.Link>
+            <Nav.Link href="/chinese_zodiac">Chinese Zodiac</Nav.Link>
           </Nav>
+
+
 
           <Nav>
             <NavDropdown title="Settings" id="collasible-nav-dropdown">
@@ -46,16 +48,5 @@ export default function NavBar({ user, setUser }) {
       </Container>
     </Navbar>
     </>
-    // <nav>
-    //   <Link to="/">Home</Link>
-    //   &nbsp; | &nbsp;
-    //   <Link to="/orders">Daily Horoscope</Link>
-    //   &nbsp; | &nbsp;
-    //   <Link to="/orders/new">Compatibility</Link>
-    //   &nbsp; | &nbsp;
-    //   <span>Welcome, {user.name}</span>
-    //   &nbsp; | &nbsp;
-    //   <Link to="" onClick={handleLogOut}>Log Out</Link>
-    // </nav>
   );
 }

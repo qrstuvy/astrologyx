@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
-import Compatibility from '../Compatibility/Compatibility';
+import ChineseZodiac from '../ChineseZodiac/ChineseZodiac';
 import HomePage from '../HomePage/HomePage';
 import DailyHoroscopePage from '../DailyHoroscopePage/DailyHoroscopePage';
 import NavBar from '../../components/NavBar/NavBar';
@@ -12,8 +12,8 @@ import NavBar from '../../components/NavBar/NavBar';
 function App() {
   const [user, setUser] = useState(getUser());
   const [horoscope, setHoroscope] = useState([])
-  const [sunSign, setSunSign] = useState("pisces")
-  const [day, setDay] = useState("today")
+  const [sunSign, setSunSign] = useState('Pisces')
+  const [day, setDay] = useState('Today')
 
   useEffect (function () {
     async function getItems() {
@@ -25,7 +25,9 @@ function App() {
     .catch(err => console.error(err))
   }
   getItems()
-  }, [])
+  }, [day, sunSign])
+
+
 
   return (
     <main className="App">
@@ -35,8 +37,8 @@ function App() {
           <Routes>
             {/* Route components in here */}
             <Route path="/" element={<HomePage />} />
-            <Route path="/compatibility" element={<Compatibility />} />
-            <Route path="/dailyhoroscope" element={<DailyHoroscopePage horoscope={horoscope} />} />
+            <Route path="/chinese_zodiac" element={<ChineseZodiac />} />
+            <Route path="/daily_horoscope" element={<DailyHoroscopePage horoscope={horoscope} setSunSign={setSunSign} sunSign={sunSign} setDay={setDay} day={day} />} />
           </Routes>
         </>
         :

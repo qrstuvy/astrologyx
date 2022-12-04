@@ -1,17 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
   background-image: url('../../../public/images/background.jpg');
-  height: 80vmin;
+  height: 80vh;
 }
 
 .App-logo {
   height: 50vmin;
   pointer-events: none;
+  position:absolute;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 10s linear;
+    animation: App-logo-spin infinite 15s linear;
     margin: 50px;
   }
 }

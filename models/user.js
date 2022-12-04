@@ -13,10 +13,6 @@ const userSchema = new Schema({
     lowercase: true,
     required: true
   },
-  birthdate: {
-    type: Date,
-    required: true
-  },
   password: {
     type: String,
     trim: true,
