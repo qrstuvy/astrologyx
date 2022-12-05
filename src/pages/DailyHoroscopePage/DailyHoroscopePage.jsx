@@ -4,11 +4,24 @@ import DateTabs from '../../components/DateTabs/DateTabs'
 import FavoriteButton from '../../components/FavoriteButton/FavoriteButton'
 import SignOptions from "../../components/SignOptions/SignOptions"
 
-export default function DailyHoroscopePage({ horoscope, setDay, day, setSunSign, sunSign }) {
+export default function DailyHoroscopePage({ user, horoscope, setDay, day, setSunSign, sunSign }) {
 
   // const handleChange = (event) => {
   //   setSunSign(event.target.value)
   //   }
+
+const handleClick = async () => {
+  let newFavorite = {
+    favoritedSign: sunSign,
+    favoritedDate: horoscope.current_date,
+    favoritedDescription: horoscope.description
+  }
+  await fetch(`/daily_horoscope/${user._id}`, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(newFavorite)
+  })
+}
 
   return (
   <>
@@ -34,6 +47,7 @@ export default function DailyHoroscopePage({ horoscope, setDay, day, setSunSign,
       <strong>Lucky Time:</strong> {horoscope.lucky_time} <br />
       <strong>Description:</strong> {horoscope.description} <br />
     </div>
+    <button className="day" onClick={handleClick}>Favorite</button> 
 
     {/* <select value={sunSign} onChange={handleChange} className='select'>
       <option value='Capricorn'>Capricorn</option>

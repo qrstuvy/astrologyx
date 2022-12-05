@@ -20,7 +20,7 @@ function App() {
   useEffect (function () {
     async function getItems() {
     const URL = `https://aztro.sameerkumar.website/?sign=${sunSign}&day=${day}`;
-    fetch(URL, {
+    await fetch(URL, {
       method: 'POST'
     }).then(response => response.json())
     .then(json => setHoroscope(json))
@@ -39,7 +39,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path={`/profile/${user._id}`} element={<ProfilePage user={user} />} />
             <Route path="/chinese_zodiac" element={<ChineseZodiac />} />
-            <Route path="/daily_horoscope" element={<DailyHoroscopePage horoscope={horoscope} setSunSign={setSunSign} sunSign={sunSign} setDay={setDay} day={day} />} />
+            <Route path="/daily_horoscope" element={<DailyHoroscopePage user={user} horoscope={horoscope} setSunSign={setSunSign} sunSign={sunSign} setDay={setDay} day={day} />} />
           </Routes>
         </>
         :

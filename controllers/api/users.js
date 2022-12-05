@@ -1,6 +1,7 @@
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const User = require('../../models/user');
+const Profile = require('../../models/profile')
 
 module.exports = {
   create,
@@ -24,6 +25,10 @@ async function create(req, res) {
   try {
     const user = await User.create(req.body);
     const token = createJWT(user);
+    let newProfile = {
+      user: user._id
+    }
+    await Profile.create(newProfile)
     // The token is a string, but yes, we can
     // res.json a string
     res.json(token);

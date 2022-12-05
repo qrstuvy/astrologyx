@@ -13,9 +13,9 @@
     transition: 0.1s;
 }
 
-/* .day-buttons {
+.day-buttons {
     margin: 10px;
-} */
+}
 
 .daily-horoscope {
     width: 50vh;
