@@ -12,19 +12,3 @@
     transform: translateY(-3px);
     transition: 0.1s;
 }
-
-/* .day-buttons {
-    margin: 10px;
-} */
-
-.daily-horoscope {
-    width: 50vh;
-    margin: auto;
-    padding: 10px;
-}
-
-.pisces {
-    height: 25vmin;
-    pointer-events: none;
-
-}

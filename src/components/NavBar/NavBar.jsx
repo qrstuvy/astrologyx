@@ -20,7 +20,7 @@ export default function NavBar({ user, setUser }) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/">Welcome, {user.name}!</Nav.Link>
+            <Nav.Link href="/profile_page">Welcome, {user.name}!</Nav.Link>
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/daily_horoscope">Daily Horoscope</Nav.Link>
             <Nav.Link href="/chinese_zodiac">Chinese Zodiac</Nav.Link>

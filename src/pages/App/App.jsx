@@ -5,20 +5,22 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
 import ChineseZodiac from '../ChineseZodiac/ChineseZodiac';
-import HomePage from '../HomePage/HomePage';
 import DailyHoroscopePage from '../DailyHoroscopePage/DailyHoroscopePage';
+import HomePage from '../HomePage/HomePage';
 import NavBar from '../../components/NavBar/NavBar';
+import ProfilePage from '../ProfilePage/ProfilePage'
 
 function App() {
   const [user, setUser] = useState(getUser());
   const [horoscope, setHoroscope] = useState([])
   const [sunSign, setSunSign] = useState('Pisces')
   const [day, setDay] = useState('Today')
+  // const [zodiac, setZodiac] =useState(null)
 
   useEffect (function () {
     async function getItems() {
     const URL = `https://aztro.sameerkumar.website/?sign=${sunSign}&day=${day}`;
-    fetch(URL, {
+    await fetch(URL, {
       method: 'POST'
     }).then(response => response.json())
     .then(json => setHoroscope(json))
@@ -26,8 +28,6 @@ function App() {
   }
   getItems()
   }, [day, sunSign])
-
-
 
   return (
     <main className="App">
@@ -37,6 +37,7 @@ function App() {
           <Routes>
             {/* Route components in here */}
             <Route path="/" element={<HomePage />} />
+            <Route path="/profile_page" element={<ProfilePage user={user} />} />
             <Route path="/chinese_zodiac" element={<ChineseZodiac />} />
             <Route path="/daily_horoscope" element={<DailyHoroscopePage horoscope={horoscope} setSunSign={setSunSign} sunSign={sunSign} setDay={setDay} day={day} />} />
           </Routes>
