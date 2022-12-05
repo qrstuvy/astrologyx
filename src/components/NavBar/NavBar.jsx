@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './NavBar.css';
+import { getUser } from '../../utilities/users-service';
 
 export default function NavBar({ user, setUser }) {
 
@@ -20,7 +21,7 @@ export default function NavBar({ user, setUser }) {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/profile_page">Welcome, {user.name}!</Nav.Link>
+            <Nav.Link href={`/profile/${user._id}`}>Welcome, {user.name}!</Nav.Link>
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/daily_horoscope">Daily Horoscope</Nav.Link>
             <Nav.Link href="/chinese_zodiac">Chinese Zodiac</Nav.Link>

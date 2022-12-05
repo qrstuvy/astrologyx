@@ -1,6 +1,7 @@
 import './Daily-horoscope.css'
 import pisces from './pisces.png'
-import DateTabs from "../../components/DateTabs/DateTabs"
+import DateTabs from '../../components/DateTabs/DateTabs'
+import FavoriteButton from '../../components/FavoriteButton/FavoriteButton'
 import SignOptions from "../../components/SignOptions/SignOptions"
 
 export default function DailyHoroscopePage({ horoscope, setDay, day, setSunSign, sunSign }) {
@@ -19,7 +20,6 @@ export default function DailyHoroscopePage({ horoscope, setDay, day, setSunSign,
     </div> */}
 
     <div className="daily-horoscope">
-
     <h2>{day}'s Horoscope</h2>
       <strong>Date:</strong> {horoscope.current_date} <br />
 

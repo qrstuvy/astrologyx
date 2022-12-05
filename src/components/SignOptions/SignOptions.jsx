@@ -15,7 +15,7 @@ export default function SignOptions({ setSunSign }) {
   
   return (
     <div>
-       <FormControl sx={{ m: 1, minWidth: 100 }} >
+       <FormControl sx={{ m: 1, minWidth: 100 }} size="small" >
         <InputLabel id="demo-simple-select-autowidth-label" color='primary' >Sign</InputLabel>
         <Select
           labelId="demo-simple-select-autowidth-label"
@@ -36,7 +36,7 @@ export default function SignOptions({ setSunSign }) {
           <MenuItem value='Virgo'>Virgo</MenuItem>
           <MenuItem value='Libra'>Libra</MenuItem>
           <MenuItem value='Scorpio'>Scorpio</MenuItem>
-          <MenuItem value='Sagittarius'>Libra</MenuItem>
+          <MenuItem value='Sagittarius'>Sagittarius</MenuItem>
         </Select>
       </FormControl>
    </div>

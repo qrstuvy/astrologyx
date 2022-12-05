@@ -15,12 +15,12 @@ function App() {
   const [horoscope, setHoroscope] = useState([])
   const [sunSign, setSunSign] = useState('Pisces')
   const [day, setDay] = useState('Today')
-  // const [zodiac, setZodiac] =useState(null)
+  // const [zodiac, setZodiac] = useState(null)
 
   useEffect (function () {
     async function getItems() {
     const URL = `https://aztro.sameerkumar.website/?sign=${sunSign}&day=${day}`;
-    await fetch(URL, {
+    fetch(URL, {
       method: 'POST'
     }).then(response => response.json())
     .then(json => setHoroscope(json))
@@ -37,7 +37,7 @@ function App() {
           <Routes>
             {/* Route components in here */}
             <Route path="/" element={<HomePage />} />
-            <Route path="/profile_page" element={<ProfilePage user={user} />} />
+            <Route path={`/profile/${user._id}`} element={<ProfilePage user={user} />} />
             <Route path="/chinese_zodiac" element={<ChineseZodiac />} />
             <Route path="/daily_horoscope" element={<DailyHoroscopePage horoscope={horoscope} setSunSign={setSunSign} sunSign={sunSign} setDay={setDay} day={day} />} />
           </Routes>
