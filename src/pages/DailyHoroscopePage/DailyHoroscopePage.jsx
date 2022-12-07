@@ -2,13 +2,8 @@ import './Daily-horoscope.css'
 import pisces from './pisces.png'
 import DateTabs from '../../components/DateTabs/DateTabs'
 import FavoriteButton from '../../components/FavoriteButton/FavoriteButton'
-import SignOptions from "../../components/SignOptions/SignOptions"
 
 export default function DailyHoroscopePage({ user, horoscope, setDay, day, setSunSign, sunSign }) {
-
-  // const handleChange = (event) => {
-  //   setSunSign(event.target.value)
-  //   }
 
 const handleClick = async () => {
   let newFavorite = {
@@ -16,6 +11,7 @@ const handleClick = async () => {
     favoritedDate: horoscope.current_date,
     favoritedDescription: horoscope.description
   }
+  
   await fetch(`/daily_horoscope/${user._id}`, {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
@@ -26,17 +22,12 @@ const handleClick = async () => {
   return (
   <>
   <DateTabs setDay={setDay} setSunSign={setSunSign} />
-    {/* <div className="day-buttons">
-      <button className='day' onClick={() => setDay('Yesterday')}>Yesterday</button>
-      <button className='day' onClick={() => setDay('Today')}>Today</button>
-      <button className='day' onClick={() => setDay('Tomorrow')}>Tomorrow</button>
-    </div> */}
 
     <div className="daily-horoscope">
     <h2>{day}'s Horoscope</h2>
       <strong>Date:</strong> {horoscope.current_date} <br />
 
-      <img src={pisces} className="pisces" />
+      <img src={pisces} className="pisces" alt="pisces" />
 
       <h2>{sunSign}</h2>
     <strong>Date Range:</strong> {horoscope.date_range} <br />
@@ -48,21 +39,7 @@ const handleClick = async () => {
       <strong>Description:</strong> {horoscope.description} <br />
     </div>
     <button className="day" onClick={handleClick}>Favorite</button> 
-
-    {/* <select value={sunSign} onChange={handleChange} className='select'>
-      <option value='Capricorn'>Capricorn</option>
-      <option value='Aquarius'>Aquarius</option>
-      <option value='Pisces'>Pisces</option>
-      <option value='Aries'>Aries</option>
-      <option value='Taurus'>Taurus</option>
-      <option value='Gemini'>Gemini</option>
-      <option value='Cancer'>Cancer</option>
-      <option value='Leo'>Leo</option>
-      <option value='Virgo'>Virgo</option>
-      <option value='Libra'>Libra</option>
-      <option value='Scorpio'>Scorpio</option>
-      <option value='Sagittarius'>Libra</option>
-    </select> */}
+    <FavoriteButton user={user} sunSign={sunSign} horoscope={horoscope} />
   </>
   );
 }

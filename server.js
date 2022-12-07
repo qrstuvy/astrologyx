@@ -7,8 +7,6 @@ require('dotenv').config();
 // Connect to db after the dotenv above
 require('./config/database');
 
-const profilesRouter = require("./routes/profiles.js");
-
 const app = express();
 
 app.use(logger('dev'));
@@ -21,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // Put all API routes here (before the catch-all)
 app.use('/api/users', require('./routes/api/users'));
-app.use('/daily_horoscope', profilesRouter)
+app.use('/daily_horoscope', require('./routes/profiles'))
 
 // "catch-all" route that will match all GET requests
 // that don't match an API route defined above

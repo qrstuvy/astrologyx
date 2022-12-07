@@ -11,10 +11,10 @@ const labels = {
     return `${value} Star${value !== 1 ? 's' : ''}, ${labels[value]}`;
   }
   
-  export default function HoverRating() {
+  export default function FavoriteButton({user, horoscope, sunSign}) {
     const [value, setValue] = React.useState(0);
     const [hover, setHover] = React.useState(-1);
-  
+
     return (
       <Box
         sx={{
@@ -30,7 +30,21 @@ const labels = {
           precision={1}
           getLabelText={getLabelText}
           onChange={(event, newValue) => {
-            setValue(newValue);
+            let newFavorite = {
+              favoritedSign: sunSign,
+              favoritedDate: horoscope.current_date,
+              favoritedDescription: horoscope.description
+            }
+            if (!newFavorite) {
+              console.log('already favorited!')
+            } else {
+            setValue(newValue);   
+        
+            fetch(`/daily_horoscope/${user._id}`, {
+              method: 'POST',
+              headers: {'Content-Type': 'application/json'},
+              body: JSON.stringify(newFavorite)
+            })}
           }}
           onChangeActive={(event, newHover) => {
             setHover(newHover);
