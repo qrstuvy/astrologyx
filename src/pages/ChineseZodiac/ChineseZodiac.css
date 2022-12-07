@@ -31,4 +31,61 @@
     overflow: hidden;
   }
   
+  #zodiac-1 {
+    background-image: url("https://i.ibb.co/tJnZnY8/eto-mark01-nezumi.png");
+  }
   
+  #zodiac-2 {
+    background-image: url("https://i.ibb.co/YZsRCPJ/eto-mark02-ushi.png");
+  }
+  
+  #zodiac-3 {
+    background-image: url("https://i.ibb.co/z7PFtLh/eto-mark03-tora.png");
+  }
+  
+  #zodiac-4 {
+    background-image: url("https://i.ibb.co/P5FWL6x/eto-mark04-usagi.png");
+  }
+  
+  #zodiac-5 {
+    background-image: url("https://i.ibb.co/MfRrLqG/eto-mark05-tatsu.png");
+  }
+  
+  #zodiac-6 {
+    background-image: url("https://i.ibb.co/yWv1nSp/eto-mark06-hebi.png");
+  }
+  
+  #zodiac-7 {
+    background-image: url("https://i.ibb.co/sVhBYc7/eto-mark07-uma.png");
+  }
+  
+  #zodiac-8 {
+    background-image: url("https://i.ibb.co/WGM5QDZ/eto-mark08-hitsuji.png");
+  }
+  
+  #zodiac-9 {
+    background-image: url("https://i.ibb.co/JFN4f1W/eto-mark09-saru.png");
+  }
+  
+  #zodiac-10 {
+    background-image: url("https://i.ibb.co/R3dq8ws/eto-mark10-tori.png");
+  }
+  
+  #zodiac-11 {
+    background-image: url("https://i.ibb.co/XywQLG4/eto-mark11-inu.png");
+  }
+  
+  #zodiac-0 {
+    background-image: url("https://i.ibb.co/mCss4ZB/eto-mark12-inoshishi.png");
+  }
+  
+.transformBig{
+    transition-duration: 3s;
+    transform:scale(1.6);
+  }
+  
+  .transformSmall{
+    transition-duration: 3s;
+    transform:scale(0.8);
+    opacity: 0.5;
+  }
