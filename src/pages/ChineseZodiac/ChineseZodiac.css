@@ -1,11 +1,15 @@
+* {
+  position: fixed;
+  text-align: center;
+}
+
 .set {
-    font-size: 1em;
-    padding: 6px 20px;
-    border-radius: 15px;
-    background-color: rgba(23, 40, 80, 0.671);
-    border: 1px solid rgb(45, 76, 138);
-    margin: 10px;
-    color: white;
+  font-size: 1em;
+  padding: 6px 20px;
+  border-radius: 15px;
+  background-color: rgba(23, 40, 80, 0.671);
+  border: 1px solid rgb(45, 76, 138);
+  margin: 10px;
   }
 
   .set:hover {
@@ -14,13 +18,20 @@
     transition: 0.1s;
   }
   
+.birthYear {
+  width: 50vh;
+  padding: 10px;
+}
+
+  .form-content {
+    width: 50vh;
+    margin: auto;
+  }
+  
   .wrapper {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    justify-items: center;
-    align-items: center;
-    gap:1rem;
-    margin: 0 auto;
+
+    width: 10vh;
+    margin: 2.6em auto;
   }
   
   .zodiac-img {
@@ -28,64 +39,57 @@
     background-position: center;
     width: 5rem;
     height: 5rem;
-    overflow: hidden;
   }
   
-  #zodiac-1 {
-    background-image: url("https://i.ibb.co/tJnZnY8/eto-mark01-nezumi.png");
+  #Rat {
+    background-image: url("./images/Rat.png");
   }
   
-  #zodiac-2 {
-    background-image: url("https://i.ibb.co/YZsRCPJ/eto-mark02-ushi.png");
+  #Ox {
+    background-image: url("./images/Ox.png");
   }
   
-  #zodiac-3 {
-    background-image: url("https://i.ibb.co/z7PFtLh/eto-mark03-tora.png");
+  #Tiger {
+    background-image: url("./images/Tiger.png");
   }
   
-  #zodiac-4 {
-    background-image: url("https://i.ibb.co/P5FWL6x/eto-mark04-usagi.png");
+  #Rabbit {
+    background-image: url("./images/Rabbit.png");
   }
   
-  #zodiac-5 {
-    background-image: url("https://i.ibb.co/MfRrLqG/eto-mark05-tatsu.png");
+  #Dragon {
+    background-image: url("./images/Dragon.png");
   }
   
-  #zodiac-6 {
-    background-image: url("https://i.ibb.co/yWv1nSp/eto-mark06-hebi.png");
+  #Snake {
+    background-image: url("./images/Snake.png");
   }
   
-  #zodiac-7 {
-    background-image: url("https://i.ibb.co/sVhBYc7/eto-mark07-uma.png");
+  #Horse {
+    background-image: url("./images/Horse.png");
   }
   
-  #zodiac-8 {
-    background-image: url("https://i.ibb.co/WGM5QDZ/eto-mark08-hitsuji.png");
+  #Goat {
+    background-image: url("./images/Goat.png");
   }
   
-  #zodiac-9 {
-    background-image: url("https://i.ibb.co/JFN4f1W/eto-mark09-saru.png");
+  #Monkey {
+    background-image: url("./images/Monkey.png");
   }
   
-  #zodiac-10 {
-    background-image: url("https://i.ibb.co/R3dq8ws/eto-mark10-tori.png");
+  #Rooster {
+    background-image: url("./images/Rooster.png");
   }
   
-  #zodiac-11 {
-    background-image: url("https://i.ibb.co/XywQLG4/eto-mark11-inu.png");
+  #Dog {
+    background-image: url("./images/Dog.png");
   }
   
-  #zodiac-0 {
-    background-image: url("https://i.ibb.co/mCss4ZB/eto-mark12-inoshishi.png");
+  #Pig {
+    background-image: url("./images/Pig.png");
   }
   
-.transformBig{
-    transition-duration: 3s;
-    transform:scale(1.6);
-  }
-  
-  .transformSmall{
-    transition-duration: 3s;
-    transform:scale(0.8);
-    opacity: 0.5;
+.transformImage{
+    transition-duration: 1s;
+    transform:scale(1.8);
   }

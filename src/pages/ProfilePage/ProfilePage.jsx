@@ -20,8 +20,8 @@ useEffect (function () {
         <>
         <h1>Hello {user.name}!✨</h1>
         <div className="favorites">
-          {newFavorites.map(favorites => 
-            <FavoritesCard key={favorites.favoritedDescription} sign={favorites.favoritedSign} date={favorites.favoritedDate} description={favorites.favoritedDescription} />
+          {newFavorites.map((favorites, i) => 
+            <FavoritesCard key={i} id={favorites._id} sign={favorites.favoritedSign} date={favorites.favoritedDate} description={favorites.favoritedDescription} user={user} setNewFavorites={setNewFavorites} />
             )}
         </div>
         

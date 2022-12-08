@@ -37,9 +37,10 @@ const handleClick = async () => {
       <strong>Lucky Number:</strong> {horoscope.lucky_number} <br />
       <strong>Lucky Time:</strong> {horoscope.lucky_time} <br />
       <strong>Description:</strong> {horoscope.description} <br />
+      <FavoriteButton user={user} sunSign={sunSign} horoscope={horoscope} />
     </div>
     <button className="day" onClick={handleClick}>Favorite</button> 
-    <FavoriteButton user={user} sunSign={sunSign} horoscope={horoscope} />
+    
   </>
   );
 }

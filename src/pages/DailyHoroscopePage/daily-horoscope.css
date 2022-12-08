@@ -28,3 +28,14 @@
     pointer-events: none;
 
 }
+
+.horoscope-img {
+    background-size: cover;
+    background-position: center;
+    width: 5rem;
+    height: 5rem;
+  }
+  
+#Pisces {
+    Background-image: url("https://i.ibb.co/tJnZnY8/eto-mark01-nezumi.png");
+}

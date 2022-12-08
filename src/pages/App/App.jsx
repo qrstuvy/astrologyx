@@ -15,7 +15,7 @@ function App() {
   const [horoscope, setHoroscope] = useState([])
   const [sunSign, setSunSign] = useState('Pisces')
   const [day, setDay] = useState('Today')
-  // const [zodiac, setZodiac] = useState(null)
+
 
   useEffect (function () {
     async function getItems() {
@@ -35,7 +35,6 @@ function App() {
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
-            {/* Route components in here */}
             <Route path="/" element={<HomePage />} />
             <Route path={`/profile/${user._id}`} element={<ProfilePage user={user} />} />
             <Route path="/chinese_zodiac" element={<ChineseZodiac />} />

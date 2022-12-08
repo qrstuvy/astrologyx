@@ -35,7 +35,7 @@ const labels = {
               favoritedDate: horoscope.current_date,
               favoritedDescription: horoscope.description
             }
-            if (!newFavorite) {
+            if (newFavorite.favoritedDescription) {
               console.log('already favorited!')
             } else {
             setValue(newValue);   

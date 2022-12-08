@@ -1,3 +1,10 @@
+.favorites {
+  display: grid;
+  grid-template-columns: 1.6fr 3.5fr;
+}
+
+  
+
 .favorites-card {
     height: 100%;
     display: grid;
@@ -14,17 +21,4 @@
       margin: 3vmin 2vmin;
     }
 
-    
-    .ProductDetails {
-      flex-direction: column;
-      justify-content: flex;
-      align-items: center;
-      padding: 3vmin 0vmin 3vmin 0vmin;
-      font-size: 2vmin;
-      color: var(--text-light);
-    }
   
-    .ProductDetails .section-heading {
-      width: 75%;
-      margin: 0 auto;
-    }

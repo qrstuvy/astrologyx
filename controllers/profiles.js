@@ -2,7 +2,8 @@ const Profile = require('../models/profile')
 
 module.exports = {
 create,
-index
+index,
+delete: deleteOne
 }
 
 async function create (req, res) {
@@ -15,6 +16,14 @@ async function create (req, res) {
 
 async function index (req, res){
     const profile = await Profile.findOne({user: req.params.id})
-    console.log(profile)
+    // console.log(profile)
+    res.json(profile)
+}
+
+async function deleteOne (req, res) {
+    console.log(req.params.id)
+    let profile = await Profile.findOne({user: req.params.userId})
+    profile.favorites.remove(req.params.id)
+    await profile.save()
     res.json(profile)
 }

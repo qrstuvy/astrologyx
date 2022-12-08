@@ -21,8 +21,8 @@ body {
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #031d2e;
-  /* padding: 2vmin; */
+  background-image: url('/public/images/background.jpg');
+  background-attachment: fixed;
   height: 100vh;
 }
 
