@@ -28,7 +28,6 @@ export default function NavBar({ user, setUser }) {
 
 
           <Nav>
-          <Nav.Link href="/">About Us</Nav.Link>
             <Nav.Link eventKey={2} href="" onClick={handleLogOut}>
               Log Out
             </Nav.Link>

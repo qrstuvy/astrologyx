@@ -1,9 +1,8 @@
 import * as React from 'react';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import SignOptions from '../SignOptions/SignOptions';
-import FavoriteButton from '../FavoriteButton/FavoriteButton';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 
 export default function DateTabs({ setDay, setSunSign }) {
   const [value, setValue] = React.useState(1);
@@ -19,7 +18,6 @@ export default function DateTabs({ setDay, setSunSign }) {
       <Tab label="Today" onClick={() => setDay('Today')} />
       <Tab label="Tomorrow" onClick={() => setDay('Tomorrow')} />
       <SignOptions setSunSign={setSunSign} />
-      {/* <FavoriteButton /> */}
     </Tabs>
     </Box>
   );

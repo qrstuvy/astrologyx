@@ -1,9 +1,11 @@
 import './Daily-horoscope.css'
-import pisces from './pisces.png'
 import DateTabs from '../../components/DateTabs/DateTabs'
-import FavoriteButton from '../../components/FavoriteButton/FavoriteButton'
+import GetHoroscope from '../../components/GetHoroscope/GetHoroscope'
 
 export default function DailyHoroscopePage({ user, horoscope, setDay, day, setSunSign, sunSign }) {
+  const birthdate = new Date(user.birthdate);
+  const sign = GetHoroscope(birthdate);
+
 
 const handleClick = async () => {
   let newFavorite = {
@@ -26,9 +28,9 @@ const handleClick = async () => {
     <div className="daily-horoscope">
     <h2>{day}'s Horoscope</h2>
       <strong>Date:</strong> {horoscope.current_date} <br />
-
-      <img src={pisces} className="pisces" alt="pisces" />
-
+      <div className="wrapper">
+      <div className="horoscope-img transformImage" id={sunSign}></div>
+      </div>
       <h2>{sunSign}</h2>
     <strong>Date Range:</strong> {horoscope.date_range} <br />
       <strong>Mood:</strong> {horoscope.mood} <br />
@@ -37,10 +39,10 @@ const handleClick = async () => {
       <strong>Lucky Number:</strong> {horoscope.lucky_number} <br />
       <strong>Lucky Time:</strong> {horoscope.lucky_time} <br />
       <strong>Description:</strong> {horoscope.description} <br />
-      <FavoriteButton user={user} sunSign={sunSign} horoscope={horoscope} />
     </div>
     <button className="day" onClick={handleClick}>Favorite</button> 
     
+    <p>Your zodiac sign is: {sign}!</p>
   </>
   );
 }

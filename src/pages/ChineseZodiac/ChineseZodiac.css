@@ -29,16 +29,16 @@
   }
   
   .wrapper {
-
     width: 10vh;
     margin: 2.6em auto;
   }
   
   .zodiac-img {
-    background-size: cover;
-    background-position: center;
-    width: 5rem;
-    height: 5rem;
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 10vh;
+    height: 10vh;
+    transform:scale(2);
   }
   
   #Rat {
@@ -89,7 +89,10 @@
     background-image: url("./images/Pig.png");
   }
   
+#null{
+  background-image: url("./images/QuestionMark.png");
+}
+
 .transformImage{
     transition-duration: 1s;
-    transform:scale(1.8);
   }

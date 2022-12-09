@@ -16,6 +16,7 @@
 - Node JS
 - HTML5
 - CSS & Bootstrap
+- Material UI
 - JavaScript
 
 
@@ -32,7 +33,7 @@ As a user, AAU, I want the ability to...
 - sign in and be able to see my daily horoscope
 - see what sign I am based on my birthday
 - navigate to see yesterday's, today's and tomorrow's horoscope
-- check compatibility with other signs
+- check what my chinese horoscope is based on my birth year
 - see today's mood/colors/lucky number
 ```
 
@@ -48,6 +49,8 @@ As a user, AAU, I want the ability to...
 
 - Sign-up and log-in to access more features
 - Logged in users can view daily horoscopes for different signs
+- Chinese Zodiac calculator avaiable to input your birth year and see your sign!
+- Logged in users can favorite horoscope readings into their profile page to view and delete at their convenience
 
 
 ## Trello Board

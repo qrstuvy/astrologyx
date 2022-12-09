@@ -9,7 +9,6 @@ const Schema = mongoose.Schema;
 
 const profileSchema = new Schema({
   sign: String,
-  
   favorites: [favoritesSchema],
   user: { type: Schema.Types.ObjectId, ref: 'User' },
 }, {

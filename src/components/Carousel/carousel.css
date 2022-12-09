@@ -2,11 +2,13 @@
     position: relative;
 }
 
+
+
 .carousel {
-    margin: 30px;
-    
+    margin-top: 8%;
 }
 
 p {
-    margin: 100px;
+    margin: 0 100px 50px 100px;
+    padding-bottom: 80px;
 }

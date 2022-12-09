@@ -2,7 +2,7 @@ import './ChineseZodiac.css'
 import { useState } from 'react'
 
 export default function ChineseZodiac() {
-	const [zodiac, setZodiac] = useState(null)
+	const [zodiac, setZodiac] = useState("null")
 	const [year, setYear] = useState(null)
 
 	const handleChange = (event) => {		  
@@ -47,14 +47,13 @@ export default function ChineseZodiac() {
     <h1>Chinese Zodiac Calculator</h1>
 			<div className="form-content">
 			<form onSubmit={handleSubmit}>
-				<input type="number" name="birthYear" className="birthYear" required onChange={handleChange} min="1900" max="2030" maxLength="4" pattern="\d*" /> <br />
+				<input type="number" name="birthYear" className="birthYear" placeholder='Enter year of birth...' required onChange={handleChange} min="1900" max="2030" maxLength="4" pattern="\d*" /> <br />
 				<div className="button"><button type="submit" className="set">Set</button></div>
 			</form>
 			</div>
-			{ zodiac ?
+			{ zodiac !== "null" ?
 			<h2 id="result-h2">You're a {zodiac}!</h2> :
 			<h2 id="result-h2">You're a...</h2>
-			
    }
    			<div className="wrapper">
 				<div className="zodiac-img transformImage" id={zodiac}></div>
