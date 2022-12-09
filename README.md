@@ -38,11 +38,19 @@ As a user, AAU, I want the ability to...
 ```
 
 
-## Wireframes/Screenshots
+## Wireframes
 
 ![Index](public/images/index.png)
 ![Signup](public/images/signup.png)
 ![Compatibility Signs](public/images/compatibilitysigns.png)
+
+
+## Screenshots
+
+![Home](public/images/home.png)
+![Profile](public/images/profile.png)
+![Daily Horoscope](public/images/daily.png)
+![Chinese Zodiac](public/images/zodiac.png)
 
 
 ## INSTRUCTIONS
@@ -60,6 +68,7 @@ As a user, AAU, I want the ability to...
 
 ## Planned future enhancements
 
+- Implement feature to give personality traits for each sign
 
 
 ## Credits
