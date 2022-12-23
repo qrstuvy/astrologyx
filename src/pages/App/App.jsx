@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import './App.css';
-import AuthPage from '../pages/AuthPage/AuthPage';
+import AuthPage from '../AuthPage/AuthPage';
 import ChineseZodiac from '../ChineseZodiac/ChineseZodiac';
 import DailyHoroscopePage from '../DailyHoroscopePage/DailyHoroscopePage';
 import HomePage from '../HomePage/HomePage';
