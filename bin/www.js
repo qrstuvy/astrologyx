@@ -5,7 +5,7 @@
  */
 
  var app = require('../server');
- var debug = require('debug')('astrologyx:server');
+ var debug = require('debug')('desolate-falls-11016:server');
  var http = require('http');
  
  /**
