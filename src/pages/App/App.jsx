@@ -9,12 +9,10 @@ import DailyHoroscopePage from '../DailyHoroscopePage/DailyHoroscopePage';
 import HomePage from '../HomePage/HomePage';
 import NavBar from '../../components/NavBar/NavBar';
 import ProfilePage from '../ProfilePage/ProfilePage'
-// import GetHoroscope from '../../components/GetHoroscope/GetHoroscope';
+
 
 function App() {
-  const [user, setUser] = useState(getUser());
-  // const birthdate = new Date(user.birthdate);
-  // const sign = GetHoroscope(birthdate);
+  const [user, setUser] = useState('getUser()');
   const [horoscope, setHoroscope] = useState([])
   const [sunSign, setSunSign] = useState('Pisces')
   const [day, setDay] = useState('Today')
