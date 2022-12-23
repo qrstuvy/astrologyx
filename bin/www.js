@@ -5,7 +5,7 @@
  */
 
  var app = require('../server');
- var debug = require('debug')('sei103-sei-cafe:server');
+ var debug = require('debug')('astrologyx:server');
  var http = require('http');
  
  /**
