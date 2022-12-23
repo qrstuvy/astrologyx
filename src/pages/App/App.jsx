@@ -3,15 +3,9 @@ import { Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import './App.css';
-import AuthPage from '../AuthPage/AuthPage';
-import ChineseZodiac from '../ChineseZodiac/ChineseZodiac';
-import DailyHoroscopePage from '../DailyHoroscopePage/DailyHoroscopePage';
-import HomePage from '../HomePage/HomePage';
-import NavBar from '../../components/NavBar/NavBar';
 import ProfilePage from '../ProfilePage/ProfilePage'
 
 
-function App() {
   const [user, setUser] = useState('getUser()');
   const [horoscope, setHoroscope] = useState([])
   const [sunSign, setSunSign] = useState('Pisces')
@@ -46,6 +40,6 @@ function App() {
       }
     </main>
   );
-}
+
 
 export default App;
