@@ -37,51 +37,51 @@
 }
 
 #Capricorn {
-    background-image: url("./images/Capricorn.png");
+    background-image: url("../../../public/images/Capricorn.png");
 }
 
 #Aquarius {
-    background-image: url("./images/Aquarius.png");
+    background-image: url("../../../public/images/Aquarius.png");
 }
 
 #Pisces {
-    background-image: url("./images/Pisces.png");
+    background-image: url("../../../public/images/Pisces.png");
 }
 
 #Aries {
-    background-image: url("./images/Aries.png");
+    background-image: url("../../../public/images/Aries.png");
 }
 
 #Taurus {
-    background-image: url("./images/Taurus.png");
+    background-image: url("../../../public/images/Taurus.png");
 }
 
 #Gemini {
-    background-image: url("./images/Gemini.png");
+    background-image: url("../../../public/images/Gemini.png");
 }
 
 #Cancer {
-    background-image: url("./images/Cancer.png");
+    background-image: url("../../../public/images/Cancer.png");
 }
 
 #Leo {
-    background-image: url("./images/Leo.png");
+    background-image: url("../../../public/images/Leo.png");
 }
 
 #Virgo {
-    background-image: url("./images/Virgo.png");
+    background-image: url("../../../public/images/Virgo.png");
 }
 
 #Libra {
-    background-image: url("./images/Libra.png");
+    background-image: url("../../../public/images/Libra.png");
 }
 
 #Scorpio {
-    background-image: url("./images/Scorpio.png");
+    background-image: url("../../../public/images/Scorpio.png");
 }
 
 #Sagittarius {
-    background-image: url("./images/Sagittarius.png");
+    background-image: url("../../../public/images/Sagittarius.png");
 }
 
 .transformImage{
