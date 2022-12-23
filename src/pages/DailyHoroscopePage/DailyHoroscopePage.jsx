@@ -1,4 +1,4 @@
-import './DailyHoroscope.css'
+import '../../../public/images/Pisces.png'
 import DateTabs from '../../components/DateTabs/DateTabs'
 import GetHoroscope from '../../components/GetHoroscope/GetHoroscope'
 
