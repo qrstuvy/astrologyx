@@ -1,4 +1,4 @@
-import '../../pages/DailyHoroscopePage/Daily-horoscope.css'
+import '../../pages/DailyHoroscopePage/DailyHoroscope.css'
 
 export default function FavoritesCard({ user, sign, date, description, id, setNewFavorites}) {
 
