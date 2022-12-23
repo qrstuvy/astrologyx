@@ -26,9 +26,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "node ./bin/www",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -51,8 +49,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3001",
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
+  "proxy": "http://localhost:3001"
   }
-}
