@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import SignUpForm from '../pages/SignUpForm/SignUpForm';
-import LoginForm from '../pages/LoginForm/LoginForm';
+import SignUpForm from '../../components/SignUpForm/SignUpForm';
+import LoginForm from '../../components/LoginForm/LoginForm';
 import logo from '../zodiac.png';
 import './AuthPage.css'
 
