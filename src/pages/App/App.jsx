@@ -12,7 +12,7 @@ import ProfilePage from '../ProfilePage/ProfilePage'
 
 
 function App() {
-  const [user, setUser] = useState('getUser()');
+  const [user, setUser] = useState(getUser());
   const [horoscope, setHoroscope] = useState([])
   const [sunSign, setSunSign] = useState('Pisces')
   const [day, setDay] = useState('Today')
