@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // Put all API routes here (before the catch-all)
 app.use('/api/users', require('./routes/api/users'));
-app.use('/daily_horoscope', ensureLoggedIn, require('./routes/profiles'))
+app.use('/daily_horoscope', require('./routes/profiles'))
 
 // "catch-all" route that will match all GET requests
 // that don't match an API route defined above
